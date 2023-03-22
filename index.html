@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    </head>
+    <body>
+        <script>
+            let R = parseFloat(prompt('Nhập bán kính : '));
+            // nếu là số (ko phai NaN)
+            if (!isNaN(R) && (R > 0)){
+                let chuVi = ( 2 * Math.PI * R ).toFixed(2);
+
+                let dienTich = Math.pow(R,2) * Math.PI;
+                dienTich = dienTich.toFixed(3);// lấy 3 chữ số thập phân
+                alert('Tròn có R =' + R + ', chu vi = ' + chuVi + ', dien tich=' + dienTich);
+            } else {
+                alert('Giá trị nhập không hợp lệ');
+            }
+        </script>
+    </body>
+</html>
